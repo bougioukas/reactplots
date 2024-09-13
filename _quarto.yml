@@ -3,7 +3,7 @@ project:
   output-dir: docs
 website:
   title: "REACTPLOTS"
-  site-url: "https://bougioukas.github.io/overviews/"
+  site-url: "https://github.com/bougioukas/reactplots"
   favicon: "img/logo.png"
   reader-mode: true
   navbar:
