@@ -1,4 +1,4 @@
-# STORYTELLING WITH DATA AND COLORS
+# REACTPLOTS: An open-access platform and a taxonomy of interactive data visualizations for R
 
 
 

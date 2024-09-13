@@ -98,7 +98,7 @@ animate1
 
 ## <span style="color:orange;">R</span> INT<span style="color:orange;">E</span>R<span style="color:orange;">ACT</span>IVE <span style="color:orange;">PLOTS</span>
 
-Imagine having (almost) all types of data visualization tools and techniques seamlessly brought together in one place, creating a comprehensive and unified platform for unlocking insights from your data. This consolidated **open access** hub allows users to employ diverse visualization methods, from statistical plots to cartograms. 
+This platform supports diverse types of visualizations, ranging from basic, interactive or animated plots like scatterplots to more sophisticated graphs such as networks, heatmaps or advanced interconnected plots. 
 
 
 :::
@@ -110,7 +110,8 @@ Imagine having (almost) all types of data visualization tools and techniques sea
 ![](img/pic1.png){style="float: right; margin-right: 20px;" fig-align="left" width="100"}
 
 
-**THE MAIN IDEA:** Step-by-step recreation of published visualizations sourced from scholarly articles, websites, or media sources. All the data visualizations presented in this website are generated using R program. Line-highlighting is employed to accentuate the added code in every step.
+**THE MAIN IDEA:** Interactive data visualizations have become increasingly important in data science, analytics, and research. They provide dynamic ways to explore and communicate data, allowing users to interact with graphical representations, such as zooming, filtering, and adjusting parameters in real time. In recent years, the R programming language has become one of the leading environments for data analysis and visualization, primarily due to its rich ecosystem of libraries like ggplot2, plotly, shiny, leaflet, gganimate, and dygraphs.
+
 
 :::{#me}
 
@@ -118,28 +119,13 @@ Imagine having (almost) all types of data visualization tools and techniques sea
 
 ## Why R for interactive data visualization?
 
-Choosing R for data visualization, particularly when leveraging the grammar of graphics through packages like `{ggplot2}`, offers several compelling reasons:
+Choosing R for data visualization offers several compelling reasons:
 
 - R is **open source** and freely available, making it accessible to a broad of users.
 
-- R, especially with `{ggplot2}`, is renowned for producing **high-quality** and publication-ready visualizations.
-
-- The grammar of graphics provides a systematic and structured approach to data visualization. With `{ggplot2}` (and its extensions), users can describe the components of a plot using **layers**, making it easy to create complex visualizations while maintaining code readability.
+-  R, with packages like `{plotly}` and `{Shiny}`, supports the creation of **interactive** visualizations.
 
 - R has a vibrant and active **user community**, including statisticians, data scientists, and methodologists.
 
--  R, with packages like `{plotly}` and `{Shiny}`, supports the creation of **interactive** visualizations.
-
-<br>
 :::
-
-
-
-
-
-
-
-
-
-
 
