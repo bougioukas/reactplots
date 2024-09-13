@@ -1,27 +1,61 @@
 project:
   type: website
   output-dir: docs
-  
 website:
-  title: "MY WEB SITE"
+  title: "REACTPLOTS"
+  site-url: "https://bougioukas.github.io/overviews/"
+  favicon: "img/logo.png"
+  reader-mode: true
   navbar:
-    left:
-      - href: index.qmd
-        text: Home
-      - projects.qmd
+    right:
+      - text: Interactive plots
+        menu:
+          - text: plotly
+            href: projects.qmd
+          - text: highcharter
+            href: projects.qmd
+      - text: Animations
+        menu:
+          - text: gganimate
+            href: projects.qmd
+      - text: 3D plots
+        menu:
+          - text: plot3D
+            href: projects.qmd
+          - text: rgl
+            href: projects.qmd
+      - text: Linked plots
+        menu:
+          - text: rls
+            href: projects.qmd
+    pinned: true
+    logo: "img/logo.png"
     tools:
-      - icon: twitter
-        href: https://twitter.com/
       - icon: github
-        href: https://github.com/YOURUSERNAME/YOURREPO
+        href: https://github.com/bougioukas/overviews
   page-footer:
-    right: "Built with [Quarto](https://quarto.org/)"
-    left: "&copy; Copyright 2023, YOUR NAME"
-
+    right: "Built with [Quarto](https://quarto.org/)^®^"
+    left: "&copy; Copyright 2024, Konstantinos I. Bougioukas. License: [Creative Commons Attribution-NonCommercial-NoDerivs 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)."
+  back-to-top-navigation: true
 format:
   html:
-    theme: cerulean
+    smooth-scroll: true
+    theme: 
+      - custom.scss
+    grid:
+      sidebar-width: 250px
+      body-width: 950px
+      margin-width: 300px
+      gutter-width: 1.5em
+    fontsize: 1.10em
+    linestretch: 1.35      
+    link-external-newwindow: true
     toc: true
-
+    toc-location: right
+    citations-hover: true
+    footnotes-hover: true
+    code-link: true
+filters:
+  - line-highlight
 editor: source
 
