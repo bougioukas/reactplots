@@ -23,7 +23,9 @@ website:
           - text: dygraphs
             href: projects.qmd
           - text: ggvis
-            href: projects.qmd            
+            href: projects.qmd
+          - text: leaflet
+            href: projects.qmd              
       - text: Animations
         menu:
           - text: gganimate

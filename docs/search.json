@@ -32,6 +32,6 @@
     "href": "index.html#why-r-for-interactive-data-visualization",
     "title": "What is this website about?",
     "section": "Why R for interactive data visualization?",
-    "text": "Why R for interactive data visualization?\nChoosing R for data visualization offers several compelling reasons:\n\nR is open source and freely available, making it accessible to a broad of users.\nR, with packages like plotly and {Shiny}, supports the creation of interactive visualizations.\nR has a vibrant and active user community, including statisticians, data scientists, and methodologists."
+    "text": "Why R for interactive data visualization?\nChoosing R for data visualization offers several compelling reasons:\n\nR is open source and freely available, making it accessible to a broad of users.\nR, with packages like plotly and {Shiny}, supports the creation of interactive visualizations.\nR has a vibrant and active user community, including statisticians, data scientists, and experienced programmers."
   }
 ]

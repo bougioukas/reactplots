@@ -125,7 +125,7 @@ Choosing R for data visualization offers several compelling reasons:
 
 -  R, with packages like `{plotly}` and `{Shiny}`, supports the creation of **interactive** visualizations.
 
-- R has a vibrant and active **user community**, including statisticians, data scientists, and methodologists.
+- R has a vibrant and active **user community**, including statisticians, data scientists, and experienced programmers.
 
 :::
 
