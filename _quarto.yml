@@ -10,37 +10,37 @@ website:
     right:
       - text: Interactivity
         menu:
-          - text: plotly
-            href: projects.qmd        
+          - text: dygraphs
+            href: projects.qmd 
+          - text: ggiraph
+            href: projects.qmd                
           - text: ggplotly
             href: projects.qmd
-          - text: ggiraph
+          - text: ggvis
+            href: projects.qmd  
+          - text: highcharter
+            href: projects.qmd                  
+          - text: leaflet
+            href: projects.qmd              
+          - text: plotly
             href: projects.qmd            
           - text: shiny
             href: projects.qmd            
-          - text: highcharter
-            href: projects.qmd            
-          - text: dygraphs
-            href: projects.qmd
-          - text: ggvis
-            href: projects.qmd
-          - text: leaflet
-            href: projects.qmd              
       - text: Animation
         menu:
-          - text: gganimate
-            href: projects.qmd
-          - text: plotly
-            href: projects.qmd            
           - text: animate
             href: projects.qmd
           - text: animation
-            href: projects.qmd               
+            href: projects.qmd                   
+          - text: gganimate
+            href: projects.qmd            
+          - text: plotly
+            href: projects.qmd            
       - text: 3D
         menu:
-          - text: rgl
-            href: projects.qmd
           - text: plotly
+            href: projects.qmd
+          - text: rgl
             href: projects.qmd
     pinned: true
     logo: "img/logo.png"
