@@ -26,7 +26,7 @@ website:
             href: projects.qmd
           - text: leaflet
             href: projects.qmd              
-      - text: Animations
+      - text: Animated plots
         menu:
           - text: gganimate
             href: projects.qmd
