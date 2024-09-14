@@ -93,7 +93,6 @@ animate1
 
 
 
-
 ::: {.g-col-12 .g-col-md-6}
 
 ## <span style="color:orange;">R</span> INT<span style="color:orange;">E</span>R<span style="color:orange;">ACT</span>IVE <span style="color:orange;">PLOTS</span>
