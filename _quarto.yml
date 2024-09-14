@@ -11,13 +11,25 @@ website:
       - text: Interactive plots
         menu:
           - text: plotly
+            href: projects.qmd        
+          - text: ggplotly
             href: projects.qmd
+          - text: ggiraph
+            href: projects.qmd            
+          - text: shiny
+            href: projects.qmd            
           - text: highcharter
+            href: projects.qmd            
+          - text: dygraphs
             href: projects.qmd
+          - text: ggvis
+            href: projects.qmd            
       - text: Animations
         menu:
           - text: gganimate
             href: projects.qmd
+          - text: animation
+            href: projects.qmd            
       - text: 3D plots
         menu:
           - text: plot3D
@@ -26,7 +38,7 @@ website:
             href: projects.qmd
       - text: Linked plots
         menu:
-          - text: rls
+          - text: rlc
             href: projects.qmd
     pinned: true
     logo: "img/logo.png"
