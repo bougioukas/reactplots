@@ -8,7 +8,7 @@ website:
   reader-mode: true
   navbar:
     right:
-      - text: Interactive plots
+      - text: Interactivity
         menu:
           - text: plotly
             href: projects.qmd        
@@ -26,21 +26,19 @@ website:
             href: projects.qmd
           - text: leaflet
             href: projects.qmd              
-      - text: Animated plots
+      - text: Animation
         menu:
           - text: gganimate
             href: projects.qmd
-          - text: animation
-            href: projects.qmd            
-      - text: 3D plots
-        menu:
-          - text: plot3D
+          - text: animate
             href: projects.qmd
+          - text: animation
+            href: projects.qmd               
+      - text: 3D
+        menu:
           - text: rgl
             href: projects.qmd
-      - text: Linked plots
-        menu:
-          - text: rlc
+          - text: plotly
             href: projects.qmd
     pinned: true
     logo: "img/logo.png"
