@@ -25,7 +25,7 @@ website:
           - text: plotly
             href: projects.qmd            
           - text: shiny
-            href: projects.qmd            
+            href: shiny_interact.qmd          
       - text: Animation
         menu:
           - text: animate

@@ -1,14 +1,28 @@
 [
   {
-    "objectID": "projects.html#project-2",
-    "href": "projects.html#project-2",
+    "objectID": "shiny_interact.html",
+    "href": "shiny_interact.html",
+    "title": "Projects",
+    "section": "",
+    "text": "#| standalone: true\n\nlibrary(htmlwidgets)\nlibrary(shiny)\n\n# Define UI for application that draws a histogram\nui &lt;- fluidPage(\n   \n   # Application title\n   titlePanel(\"Old Faithful Geyser Data\"),\n   \n   # Sidebar with a slider input for number of bins \n   sidebarLayout(\n      sidebarPanel(\n         sliderInput(\"bins\",\n                     \"Number of bins:\",\n                     min = 1,\n                     max = 50,\n                     value = 30)\n      ),\n      \n      # Show a plot of the generated distribution\n      mainPanel(\n         plotOutput(\"distPlot\")\n      )\n   )\n)\n\n# Define server logic required to draw a histogram\nserver &lt;- function(input, output) {\n   \n   output$distPlot &lt;- renderPlot({\n      # generate bins based on input$bins from ui.R\n      x    &lt;- faithful[, 2] \n      bins &lt;- seq(min(x), max(x), length.out = input$bins + 1)\n      \n      # draw the histogram with the specified number of bins\n      hist(x, breaks = bins, col = 'darkgray', border = 'white')\n   })\n}\n\n# Run the application \nshinyApp(ui = ui, server = server)"
+  },
+  {
+    "objectID": "shiny_interact.html#project-1",
+    "href": "shiny_interact.html#project-1",
+    "title": "Projects",
+    "section": "",
+    "text": "#| standalone: true\n\nlibrary(htmlwidgets)\nlibrary(shiny)\n\n# Define UI for application that draws a histogram\nui &lt;- fluidPage(\n   \n   # Application title\n   titlePanel(\"Old Faithful Geyser Data\"),\n   \n   # Sidebar with a slider input for number of bins \n   sidebarLayout(\n      sidebarPanel(\n         sliderInput(\"bins\",\n                     \"Number of bins:\",\n                     min = 1,\n                     max = 50,\n                     value = 30)\n      ),\n      \n      # Show a plot of the generated distribution\n      mainPanel(\n         plotOutput(\"distPlot\")\n      )\n   )\n)\n\n# Define server logic required to draw a histogram\nserver &lt;- function(input, output) {\n   \n   output$distPlot &lt;- renderPlot({\n      # generate bins based on input$bins from ui.R\n      x    &lt;- faithful[, 2] \n      bins &lt;- seq(min(x), max(x), length.out = input$bins + 1)\n      \n      # draw the histogram with the specified number of bins\n      hist(x, breaks = bins, col = 'darkgray', border = 'white')\n   })\n}\n\n# Run the application \nshinyApp(ui = ui, server = server)"
+  },
+  {
+    "objectID": "shiny_interact.html#project-2",
+    "href": "shiny_interact.html#project-2",
     "title": "Projects",
     "section": "Project 2",
     "text": "Project 2"
   },
   {
-    "objectID": "projects.html#project-3",
-    "href": "projects.html#project-3",
+    "objectID": "shiny_interact.html#project-3",
+    "href": "shiny_interact.html#project-3",
     "title": "Projects",
     "section": "Project 3",
     "text": "Project 3"
@@ -33,5 +47,19 @@
     "title": "What is this website about?",
     "section": "Why R for interactive data visualization?",
     "text": "Why R for interactive data visualization?\nChoosing R for data visualization offers several compelling reasons:\n\nR is open source and freely available, making it accessible to a broad of users.\nR, with packages like plotly and {Shiny}, supports the creation of interactive visualizations.\nR has a vibrant and active user community, including statisticians, data scientists, and experienced programmers."
+  },
+  {
+    "objectID": "projects.html#project-2",
+    "href": "projects.html#project-2",
+    "title": "Projects",
+    "section": "Project 2",
+    "text": "Project 2"
+  },
+  {
+    "objectID": "projects.html#project-3",
+    "href": "projects.html#project-3",
+    "title": "Projects",
+    "section": "Project 3",
+    "text": "Project 3"
   }
 ]
