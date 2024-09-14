@@ -30,7 +30,7 @@ website:
         menu:
           - text: gganimate
             href: projects.qmd
-          - text: gganimate
+          - text: plotly
             href: projects.qmd            
           - text: animate
             href: projects.qmd
