@@ -8,42 +8,44 @@ website:
   reader-mode: true
   navbar:
     right:
-      - text: Interactivity
+      - text: Basic plots
         menu:
-          - text: dygraphs
+          - text: Area plot
             href: projects.qmd 
-          - text: ggiraph
+          - text: Bar plot
             href: projects.qmd                
-          - text: ggplotly
+          - text: Box plot
             href: projects.qmd
-          - text: ggvis
+          - text: Histogram
             href: projects.qmd  
-          - text: highcharter
+          - text: Line plot
             href: projects.qmd                  
-          - text: leaflet
+          - text: Scatterplot
             href: projects.qmd              
-          - text: plotly
-            href: projects.qmd            
-          - text: shiny
-            href: shiny_interact.qmd          
-      - text: Animation
+      - text: Specialized plots
         menu:
-          - text: animate
+          - text: ROC curve
             href: projects.qmd
-          - text: animation
-            href: projects.qmd                   
-          - text: gganimate
-            href: projects.qmd            
-          - text: plotly
-            href: projects.qmd
-          - text: shiny
-            href: projects.qmd            
-      - text: 3D
+      - text: Networks
         menu:
-          - text: plotly
+          - text: Chord diagram
             href: projects.qmd
-          - text: rgl
+          - text: Graph (Network)
             href: projects.qmd
+      - text: Flow diagrams
+        menu:
+          - text: Sankey diagram
+            href: projects.qmd
+          - text: Tree diagram
+            href: projects.qmd                  
+      - text: Maps
+        menu:
+          - text: Area (geographic) map
+            href: projects.qmd
+          - text: Choropleth map
+            href: projects.qmd
+          - text: Isopleth map
+            href: projects.qmd                  
     pinned: true
     logo: "img/logo.png"
     tools:
