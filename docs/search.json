@@ -14,6 +14,13 @@
     "text": "Project 3"
   },
   {
+    "objectID": "km_curve.html",
+    "href": "km_curve.html",
+    "title": "Kaplan–Meier curve",
+    "section": "",
+    "text": "# packages\nlibrary(ggsurvfit)\nlibrary(plotly)\nlibrary(highcharter)\n\nlibrary(here)\nlibrary(readxl)\n\ndat &lt;- read_excel(here(\"data\", \"leukemia.xlsx\"))\n\nDT::datatable(\n  dat, extensions = 'Buttons', options = list(\n    dom = 'tip',\n    columnDefs = list(list(className = 'dt-center', targets = \"_all\"))\n  )\n)\n\n\n\n\n\n\n# create an object with the K-M estimates\nkm &lt;- survfit2(Surv(time, status) ~ intervention, data = dat)\n\n\nplotlyhighcharter\n\n\n\na &lt;- km |&gt;\nggsurvfit(linewidth = 0.6) +\n#theme_prism(palette = \"winter_bright\", base_size = 10) +\nadd_confidence_interval() +\nadd_censor_mark(color = \"brown\", size = 2.5) +\nadd_risktable(risktable_stats = c(\"n.risk\", \"cum.censor\", \"cum.event\")) +\nadd_quantile(y_value = 0.5, color = \"gray50\", linewidth = 0.5) +\nscale_x_continuous(expand = c(0.018, 0, 0.02, 0), limits = c(0, 35),\nbreaks = seq(0, 35, 5)) +\nscale_y_continuous(expand = c(0.018, 0, 0.05, 0)) +\nscale_color_manual(values = c(\"#077E97\", \"#800080\")) +\nscale_fill_manual(values = c(\"#077E97\", \"#800080\")) +\nlabs(\nx = \"Time in months\", y = \"Survival Probability\")\n\nggplotly(a)\n\n\n\n\n\n\n\n\n# plot\nkm_plot &lt;- hchart(km)\n\nkm_plot\n\n\n\n\n\n\n\n\n\n\n\n Back to top"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "What is this website about?",
@@ -32,7 +39,7 @@
     "href": "index.html#why-r-for-interactive-data-visualization",
     "title": "What is this website about?",
     "section": "Why R for interactive data visualization?",
-    "text": "Why R for interactive data visualization?\nChoosing R for data visualization offers several compelling reasons:\n\nR is open source and freely available, making it accessible to a broad of users.\nR, with packages like plotly and shiny, supports the creation of interactive visualizations.\nR has a vibrant and active user community, including statisticians, data scientists, and experienced programmers."
+    "text": "Why R for interactive data visualization?\nChoosing R for data visualization offers several compelling reasons:\n\nR is open source and freely available, making it accessible to a broad of users.\nR, with packages like {plotly} and {shiny}, supports the creation of interactive visualizations.\nR has a vibrant and active user community, including statisticians, data scientists, and experienced programmers."
   },
   {
     "objectID": "projects.html#project-2",

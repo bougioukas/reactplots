@@ -1,0 +1,94 @@
+---
+title: "Kaplan–Meier curve"
+---
+
+```{r}
+#| include: false
+
+#library(fontawesome)
+library(htmlwidgets)
+library(htmltools)
+#library(DT)
+#library(kableExtra)
+```
+
+
+
+
+```{r}
+#| message: false
+#| warning: false
+
+# packages
+library(ggsurvfit)
+library(plotly)
+library(highcharter)
+
+library(here)
+library(readxl)
+
+dat <- read_excel(here("data", "leukemia.xlsx"))
+
+DT::datatable(
+  dat, extensions = 'Buttons', options = list(
+    dom = 'tip',
+    columnDefs = list(list(className = 'dt-center', targets = "_all"))
+  )
+)
+```
+
+
+
+
+```{r}
+# create an object with the K-M estimates
+km <- survfit2(Surv(time, status) ~ intervention, data = dat)
+```
+
+
+
+
+
+::: {.panel-tabset}
+
+## plotly
+
+```{r}
+
+a <- km |>
+ggsurvfit(linewidth = 0.6) +
+#theme_prism(palette = "winter_bright", base_size = 10) +
+add_confidence_interval() +
+add_censor_mark(color = "brown", size = 2.5) +
+add_risktable(risktable_stats = c("n.risk", "cum.censor", "cum.event")) +
+add_quantile(y_value = 0.5, color = "gray50", linewidth = 0.5) +
+scale_x_continuous(expand = c(0.018, 0, 0.02, 0), limits = c(0, 35),
+breaks = seq(0, 35, 5)) +
+scale_y_continuous(expand = c(0.018, 0, 0.05, 0)) +
+scale_color_manual(values = c("#077E97", "#800080")) +
+scale_fill_manual(values = c("#077E97", "#800080")) +
+labs(
+x = "Time in months", y = "Survival Probability")
+
+ggplotly(a)
+```
+
+
+
+## highcharter
+
+```{r}
+
+# plot
+km_plot <- hchart(km)
+
+km_plot
+```
+
+
+:::
+
+
+
+
+

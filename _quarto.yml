@@ -26,6 +26,9 @@ website:
         menu:
           - text: ROC curve
             href: projects.qmd
+          - text: Kaplan–Meier curve
+            #href: projects.qmd
+            href: km_curve.qmd 
       - text: Networks
         menu:
           - text: Chord diagram
@@ -37,7 +40,7 @@ website:
           - text: Sankey diagram
             href: projects.qmd
           - text: Tree diagram
-            href: projects.qmd                  
+            href: shiny_interact.qmd                  
       - text: Maps
         menu:
           - text: Area (geographic) map
@@ -72,6 +75,6 @@ format:
     toc-location: right
     citations-hover: true
     footnotes-hover: true
-    code-link: true
+    #code-link: true
 editor: source
 
