@@ -35,6 +35,8 @@ website:
           - text: gganimate
             href: projects.qmd            
           - text: plotly
+            href: projects.qmd
+          - text: shiny
             href: projects.qmd            
       - text: 3D
         menu:
