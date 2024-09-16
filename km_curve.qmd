@@ -1,5 +1,6 @@
 ---
 title: "Kaplan–Meier curve"
+format: html
 ---
 
 ```{r}
@@ -8,6 +9,8 @@ title: "Kaplan–Meier curve"
 #library(fontawesome)
 library(htmlwidgets)
 library(htmltools)
+library(webshot2)
+library(proj4)
 library(crosstalk)
 library(DT)
 #library(kableExtra)
