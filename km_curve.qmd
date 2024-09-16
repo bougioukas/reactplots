@@ -8,7 +8,8 @@ title: "Kaplan–Meier curve"
 #library(fontawesome)
 library(htmlwidgets)
 library(htmltools)
-#library(DT)
+library(crosstalk)
+library(DT)
 #library(kableExtra)
 ```
 
@@ -22,7 +23,7 @@ library(htmltools)
 # packages
 library(ggsurvfit)
 library(plotly)
-library(highcharter)
+#library(highcharter)
 
 library(here)
 library(readxl)
@@ -80,9 +81,9 @@ ggplotly(a)
 ```{r}
 
 # plot
-km_plot <- hchart(km)
+#km_plot <- hchart(km)
 
-km_plot
+#km_plot
 ```
 
 
